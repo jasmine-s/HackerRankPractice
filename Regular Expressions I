@@ -1,0 +1,11 @@
+
+function regexVar(str)
+
+ {
+
+let re = /^([aeiou]).+\1$/; 
+
+return re; 
+
+}
+
