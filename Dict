@@ -1,0 +1,59 @@
+
+
+// Java program to demonstrate working of Map interface 
+
+import java.util.;
+
+import java.io.;
+
+class Solution {
+
+        public static void main(String[] argh) {
+
+                Scanner o = new Scanner(System.in);
+
+                int n = o.nextInt();
+
+                Map<String, Integer> Dict = new HashMap<String, Integer>();
+
+                for (int i = 0; i < n; i++) {
+
+                        String name = o.next();
+
+                        int p = o.nextInt();
+
+                        Dict.put(name, p);
+
+                }
+
+                //System.out.println();
+
+                
+
+                while (o.hasNext()) {
+
+                        String s = o.next();
+
+                        if(Dict.containsKey(s)) {
+
+                                System.out.println(s + "=" + Dict.get(s));
+
+                                
+
+                                
+
+                        } else {
+
+                                System.out.println("Not found");
+
+                        }
+
+                }
+
+                o.close();
+
+        }
+
+        
+
+}
